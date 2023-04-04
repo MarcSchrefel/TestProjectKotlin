@@ -27,4 +27,14 @@ class CalculateAverageTest {
         val numbers = intArrayOf(10000012, 121232, 4242253, 4353536, 51297767)
         assertEquals(3.0, calculateAverage(numbers))
     }
+    @Test
+    fun testZeroNumbers() {
+        val numbers = intArrayOf(0, 0, 0, 0, 0)
+        assertEquals(0.0, calculateAverage(numbers))
+    }
+    @Test
+    fun testMinusNumbers() {
+        val numbers = intArrayOf(-1, 0, 1)
+        assertEquals(0.0, calculateAverage(numbers))
+    }
 }
