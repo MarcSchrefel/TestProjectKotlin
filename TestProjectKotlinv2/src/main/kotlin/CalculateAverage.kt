@@ -1,4 +1,4 @@
-fun calculateAverage(numbers: IntArray): Double {
-    val sum = numbers.sum()
-    return sum.toDouble() / numbers.size
+fun calculateAverage(numbersCal: IntArray): Double {
+    val sum = numbersCal.sum()
+    return sum.toDouble() / numbersCal.size
 }
